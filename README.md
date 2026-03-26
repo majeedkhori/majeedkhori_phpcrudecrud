@@ -31,3 +31,19 @@ Look in the "apiclients" directory for examples of very simple Python program us
 ## AJAX
 
 The "ajax" pages demonstrate how to do real-time updates to a web page using Asynchronous JavaScript and XML. This is an older technology, but is a great place to start to learn how to create dynamic web pages that update content area real-time as a JavaScript client sends queries to backend server code.
+
+# Lab 9 Additions & Modifications
+
+## How to Deploy
+
+1. Copy tarball to the test environment server: scp phpcrudecrud_updated.tar.gz user@server_ip:~
+2. Extract the files: tar -xzvf phpcrudecrud_updated.tar.gz
+3. Move files to Apache directory: sudo cp -r majeedkhori_phpcrudecrud/* /var/www/html/
+4. Restart Apache server: sudo systemctl restart apache2
+
+## Lab Modifications
+
+- Updated homepage title
+- Modified default employee last name search value to "Tsukuda"
+- Created tarbal (tar.gz) deployment package
+- Deployed to a test environment
